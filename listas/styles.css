@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+main{
+ background-color:#be80ff ;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ gap: 2rem;
+ padding: 2rem;
+}
+
+section{
+  background-color: #9061c2;
+  color: white;
+  padding: 2rem;
+}
+
+.hobbies{
+  background-color: #63d3ff;
+  color: black;
+  border-left: .5rem solid #02779e;
+  border-radius: 10px;
+}
+
+.hobbies h2{
+  color: #02779e;
+}
+
+.hobbies ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  height: 80%;
+}
+
+.hobbies ul li:before{
+  content: "☆ ";
+}
+
+.recipient{
+  border-left: .5rem solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  
+  gap: 1.6rem;
+}
+
+
+.recipient ol{
+  margin-top: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+
+.links{
+  background-color: #ff548f;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.links ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  
+}
+
+.links ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.links ul li:hover{
+text-decoration: underline;
+color: white;
+}
+
+@media (min-width: 768px) {
+  main{
+    align-items: center;
+  }
+  
+  section{
+    width: 30%;
+  }
+
+  .links{
+    width: 30%;
+  }
+  
+}
